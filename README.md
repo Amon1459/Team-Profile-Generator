@@ -28,7 +28,7 @@ Manager - office number
 Engineer - GitHub username
 Intern - school
 Then a team.html page will be generated in the output directory, that displays a nicely formatted team roster.
-
+<img width="813" alt="ScreenShot of deployed application" src="https://user-images.githubusercontent.com/104540828/190929793-ee125726-cd1e-488a-9fa0-bb3fe69f80b1.png">
 This is a sample Team page for a project generated using this application
 
 Features
