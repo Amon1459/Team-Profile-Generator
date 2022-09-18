@@ -1,11 +1,11 @@
-//link to page creation
+//l page creation
 const generateHTML = require('./src/generateHTML');
 
 // team profiles
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
-const Employee = require('./lib/Employee');
+
 // node modules 
 const fs = require('fs'); 
 const inquirer = require('inquirer');
@@ -15,7 +15,8 @@ const teamArray = [];
 
 // start of manager prompts 
 const addManager = () => {
-    return inquirer.prompt ([
+    return inquirer
+    .prompt ([
         {
             type: 'input',
             name: 'name',
@@ -32,10 +33,10 @@ const addManager = () => {
         {
             type: 'input',
             name: 'id',
-            message: "Please enter the manager's ID.",
+            message: "Please enter the manager's employee ID.",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ("Please enter the manager's ID!")
+                    console.log ("Please enter the manager's employee ID!")
                     return false; 
                 } else {
                     return true;
@@ -59,7 +60,7 @@ const addManager = () => {
         {
             type: 'input',
             name: 'officeNumber',
-            message: "Please enter the manager's office number",
+            message: "Please enter the office number",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
                     console.log ('Please enter an office number!')
@@ -86,17 +87,12 @@ const addEmployee = () => {
     =================
     `);
 
-    return inquirer.prompt ([
-        {
-            type: 'list',
-            name: 'role',
-            message: "Please choose your employee's role",
-            choices: ['Engineer', 'Intern']
-        },
+    return inquirer
+    .prompt ([
         {
             type: 'input',
             name: 'name',
-            message: "What's the name of the employee?", 
+            message: "Please enter your name.?", 
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -105,6 +101,12 @@ const addEmployee = () => {
                     return false; 
                 }
             }
+        },
+        {
+            type: 'list',
+            name: 'role',
+            message: "Please choose your employee role",
+            choices: ['Engineer', 'Intern']
         },
         {
             type: 'input',
@@ -173,7 +175,7 @@ const addEmployee = () => {
         let employee; 
 
         if (role === "Engineer") {
-            employee = new Engineer (name, id, email, github);
+            employee = new Engineer  (name, id, email, github);
 
             console.log(employee);
 
