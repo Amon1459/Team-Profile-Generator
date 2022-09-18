@@ -10,5 +10,17 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amon1459/Team-Profile-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amon1459/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Amon1459/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {}
 }

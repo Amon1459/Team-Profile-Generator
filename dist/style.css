@@ -1,0 +1,49 @@
+
+
+h1 {
+    Font-Family: 'Merriweather', Serif;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+span {
+    opacity: 0.6;
+}
+
+body {
+    Font-Family: 'Muli', Sans-Serif;
+    background-color: #065b5b;
+    color: #DCEEF2;
+}
+
+.jumbotron {
+    background: #02101c;
+}
+
+.employee-card {
+    box-shadow: 5px 3px 9px 1px #465E73;
+}
+
+.card-header {
+    background: #152C40;
+}
+
+.card-body {
+    color: #465E73;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+}
